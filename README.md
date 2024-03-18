@@ -1,5 +1,7 @@
 Libretto Universitario
+
 Obiettivo: ripasso sulle liste e sulla gestione di oggetti e riferimenti.
+
 
 Si realizzi un programma per la gestione semplificata dei voti della carriera universitaria. Il programma si basa su una classe Voto (nome corso, punteggio ottenuto, data esame) ed una classe Libretto (che gestisce un elenco di Voto). La classe Libretto deve avere un metodo append() per il caricamento degli esami.
 
