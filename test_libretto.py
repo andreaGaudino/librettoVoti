@@ -5,7 +5,7 @@ lib = Libretto()
 v1 = Voto("Analisi I", 10, 28, False, "2022-01-30")
 lib.append(v1)
 
-lib.append(Voto("Fisica I", 10, 25, False, "2022-07-12"))
+#lib.append(Voto("Fisica I", 10, 25, False, "2022-07-12"))
 lib.append(Voto("Analisi II", 8, 30, True, "2022-02-15"))
 
 
@@ -22,8 +22,18 @@ except ValueError:
 
 
 nuovo1 = Voto("Fisica I", 10, 25, False, "2022-07-12")
-nuovo2 = Voto("Fisica II", 10, 25, False, "2022-07-12")
+nuovo2 = Voto("Fisica II", 10, 21, False, "2022-07-12")
+nuovo3 = Voto("Algebra e geometria lineare", 10, 20, False, "2022-06-12")
+lib.append(nuovo1)
+lib.append(nuovo2)
+lib.append(nuovo3)
 
 print("1)", lib.has_voto(nuovo1))
 print("2)", lib.has_voto(nuovo2))
+print("Libretto originario")
+lib.stampa()
+print("Libretto migliorato")
+migliorato = lib.crea_migliorato()
+migliorato.stampa()
+
 
